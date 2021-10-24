@@ -1,0 +1,20 @@
+export const types = {
+    "bug": "#909F12",
+    "dark": "#3C2E21",
+    "dragon": "#755FE0",
+    "electric": "#F2BB31",
+    "fairy": "#DB9AD9",
+    "fighting": "#381202",
+    "fire": "#E53707",
+    "flying": "#6576B4",
+    "ghost": "#494794",
+    "grass": "#389504",
+    "ground": "#CAAB51",
+    "ice": "#6DD3F3",
+    "normal": "#827F77",
+    "poison": "#934794",
+    "psychic": "#D63464",
+    "rock": "#9E863B",
+    "steel": "#908DA1",
+    "water": "#0B67C3"
+}

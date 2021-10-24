@@ -1,0 +1,44 @@
+/* ./src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: #1E1E1E;
+}
+
+.pokeball {
+  box-sizing: border-box;
+  border: 2px solid #262122;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: 0 auto;
+  background: linear-gradient(150deg, #BA0C2F 0%, #BA0C2F 48%, #262122 48%, #262122 52%, #FFF 52%, #FFF 100%);
+}
+
+.pokeball::before,
+.pokeball::after {
+  content: " ";
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+}
+
+.pokeball::before {
+  background: #262122;
+  width: 6px;
+  height: 6px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.pokeball::after {
+  background: #fff;
+  width: 4px;
+  height: 4px;
+  margin-top: 11px;
+  margin-left: 11px;
+}

@@ -1,0 +1,103 @@
+/* Importar fuentes
+Las fuentes pueden ser importadas como recursos externos, de preferencia usar Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Pseudo selector
+Los pseudo selectores son aquellos que no referencian etiquetas, ids o clases, sino a elementos que existe dentro
+del documento */
+
+/* Selector todo */
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+/* Selector de etiqueta */
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+img {
+    /* Tip: Para redondear esquinas */
+    border-radius: 10px;
+    width: 100px;
+}
+
+/* Selector de clase
+Todos los elementos que tengan dicha clase en sus atributos, se les colocara
+estos estilos, los selectores de clase inicia con punto */
+.section {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+}
+
+.article {
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    /* Margen y padding
+    El margen es un espacio externo a un elemento, el padding es un margen interno
+    Las propiedades margin pueden ser sobrecargadas, ver: 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/margin
+    https://developer.mozilla.org/en-US/docs/Web/CSS/padding */
+
+    /* Sobrecarga top-bottom left-rght */
+    margin: 10px auto;
+    
+    /* Sobrecarga top-bottom left-rght */
+    padding: 12px 24px;
+
+    /* Sombreado */
+    /* Se puede autogenerar: https://www.cssmatic.com/box-shadow */
+    -webkit-box-shadow: 0px 10px 33px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 33px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 33px -10px rgba(0,0,0,0.75);
+}
+
+.bg-dark {
+    background-color: #1E1E1E;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Pseudo selector de estado
+Existen estados de las etiquetas o el DOM que permiten hacer ciertas acciones, por ejemplo
+hover, cuando el mouse esta flotando encima de la seleccion */
+.bg-dark:hover {
+    background-color: #000000;
+
+    /* Transicion
+    Algunas propiedades pueden tener un efecto en el cambio de sus estilos, por ejemplo
+    al aumentar el ancho, color de propiedades, alto de los elementos, moverlos en x, y etc */
+    transition: all 500ms ease-in-out;
+}
+
+@media only screen and (min-width: 600px) {
+    img {
+        width: 150px;
+    }
+
+    .article {
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    img {
+        width: 125px;
+    }
+    
+    .article {
+        width: 25%;
+    }
+}

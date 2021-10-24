@@ -1,0 +1,122 @@
+<!-- Comentarios en HTML -->
+<!-- Anotaciones:
+    BP: Best practice 
+    JS: JavaScript -->
+<!-- Todo documento html debe iniciar con la etiqueta DOCTYPE -->
+<!-- El documento HTML tiene dos partes esenciales, HEAD y BODY -->
+<!DOCTYPE html>
+<!-- BP: Colocar el lenguaje del documento -->
+<html lang="en">
+<!-- Head contiene la llamada **meta informacion** de la pagina, o informacion de la informacion.
+Lo que se coloca en la etiqueta HEAD son referencias a hojas de estilos, scripts de JS y etiquetas
+que sirven para definir la pagina:
+    charset, viewport, title, etc -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de archivos externos:
+    Las hojas de estilos pueden ser definidas en archivos a parte del orignal (HTML) al igual que los scripts
+    e importase -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<!-- El BODY contiene el esqueleto de toda página web, acá se colocarán todas las etiquetas que se mostrarán
+en nuestro navegador al abrir el archivo -->
+<body>
+    <!-- BP: Seccionar el body en etiquetas o contenedores que agrupen semanticamente el contenido
+    Ejemplo: Section que contenga Article -->
+    
+    <!-- Atributos de las etiquetas
+    Toda etiqueta puede contener atributos, que definen su comportamiento o visualizacion, tambien pueden
+    servir para identificarlas -->
+
+    <!-- id: Permite identificar a un elemento y diferenciarlo entre los demas, los id's deben ser unicos aunque
+    es posible repetirlos, pero al hacer esto pierde sentido -->
+    <section id="section-01" class="section">
+        <!-- class: No confundir con clases de POO, se refiere a un identificador para elementos que contendran logica o estilos comunes,
+        por ejemplo puede existir la clase bg-dark que coloque (en CSS) un fondo negro a todas las etiquetas con esa clase -->
+        <article class="article bg-dark">
+            <!-- Hay ocasiones donde es necesario agrupar elementos para darles estilo sin crear una etiqueta semantica (o que de un significado)
+            a su agrupacion, para estos casos se utiliza div -->
+            <div class="article-header">
+                <h1>Bienvenidos a Web 101</h1>
+                <h2>Con Walter Morales</h2>
+                <p>Aprenderemos a crear páginas web desde 0</p>
+            </div>
+            <div class="article-body">
+                <!-- BP: Las imagenes tienen dos atributos basicos, src y alt
+                src sabemos que es la ruta relativa o absoluta donde se encuentra la imagen o una url,
+                alt es el texto alternativo que se mostraria si la imagen no carga, siempre coloquen alt por temas de accesibilidad
+
+                Las personas novidentes utilizan lectura en pantalla al visitar paginas web, y para las etiquetas img alt es leido
+                dandole a la persona una descripcion de lo que hay -->
+
+                <!-- Tip: Lorem Picsum es una pagina que a partir de una URL les da una imagen aleatoria -->
+                <img src="https://picsum.photos/200/300" alt="Random image">
+            </div>
+        </article>
+        <article class="article bg-dark">
+            <!-- Hay ocasiones donde es necesario agrupar elementos para darles estilo sin crear una etiqueta semantica (o que de un significado)
+            a su agrupacion, para estos casos se utiliza div -->
+            <div class="article-header">
+                <h1>Bienvenidos a Web 101</h1>
+                <h2>Con Walter Morales</h2>
+                <p>Aprenderemos a crear páginas web desde 0</p>
+            </div>
+            <div class="article-body">
+                <!-- BP: Las imagenes tienen dos atributos basicos, src y alt
+                src sabemos que es la ruta relativa o absoluta donde se encuentra la imagen o una url,
+                alt es el texto alternativo que se mostraria si la imagen no carga, siempre coloquen alt por temas de accesibilidad
+
+                Las personas novidentes utilizan lectura en pantalla al visitar paginas web, y para las etiquetas img alt es leido
+                dandole a la persona una descripcion de lo que hay -->
+
+                <!-- Tip: Lorem Picsum es una pagina que a partir de una URL les da una imagen aleatoria -->
+                <img src="https://picsum.photos/200/300" alt="Random image">
+            </div>
+        </article>
+        <article class="article bg-dark">
+            <!-- Hay ocasiones donde es necesario agrupar elementos para darles estilo sin crear una etiqueta semantica (o que de un significado)
+            a su agrupacion, para estos casos se utiliza div -->
+            <div class="article-header">
+                <h1>Bienvenidos a Web 101</h1>
+                <h2>Con Walter Morales</h2>
+                <p>Aprenderemos a crear páginas web desde 0</p>
+            </div>
+            <div class="article-body">
+                <!-- BP: Las imagenes tienen dos atributos basicos, src y alt
+                src sabemos que es la ruta relativa o absoluta donde se encuentra la imagen o una url,
+                alt es el texto alternativo que se mostraria si la imagen no carga, siempre coloquen alt por temas de accesibilidad
+
+                Las personas novidentes utilizan lectura en pantalla al visitar paginas web, y para las etiquetas img alt es leido
+                dandole a la persona una descripcion de lo que hay -->
+
+                <!-- Tip: Lorem Picsum es una pagina que a partir de una URL les da una imagen aleatoria -->
+                <img src="https://picsum.photos/200/300" alt="Random image">
+            </div>
+        </article>
+        <article class="article bg-dark">
+            <!-- Hay ocasiones donde es necesario agrupar elementos para darles estilo sin crear una etiqueta semantica (o que de un significado)
+            a su agrupacion, para estos casos se utiliza div -->
+            <div class="article-header">
+                <h1>Bienvenidos a Web 101</h1>
+                <h2>Con Walter Morales</h2>
+                <p>Aprenderemos a crear páginas web desde 0</p>
+            </div>
+            <div class="article-body">
+                <!-- BP: Las imagenes tienen dos atributos basicos, src y alt
+                src sabemos que es la ruta relativa o absoluta donde se encuentra la imagen o una url,
+                alt es el texto alternativo que se mostraria si la imagen no carga, siempre coloquen alt por temas de accesibilidad
+
+                Las personas novidentes utilizan lectura en pantalla al visitar paginas web, y para las etiquetas img alt es leido
+                dandole a la persona una descripcion de lo que hay -->
+
+                <!-- Tip: Lorem Picsum es una pagina que a partir de una URL les da una imagen aleatoria -->
+                <img src="https://picsum.photos/200/300" alt="Random image">
+            </div>
+        </article>
+    </section>
+</body>
+</html>
